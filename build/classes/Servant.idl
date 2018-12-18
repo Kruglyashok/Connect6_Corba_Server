@@ -1,0 +1,16 @@
+module ServantApp {
+    struct MyStruct {
+        long x1;
+        long y1;
+        long x2;
+        long y2;
+        long g;
+    };
+    typedef MyStruct RetStruct;
+    interface Servant {
+        void addPoints(in long x1, in long y1, in long x2, in long y2, in long num);
+        long getNumber();
+        oneway void shutdown();
+        RetStruct getPoints();
+    };
+};
