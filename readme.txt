@@ -1,4 +1,8 @@
-pen a new windows of CMD console, type in the following command to start the ORB
+Compile the idl file using the idlj command as below:
+
+idlj  -fall  Addition.idl
+
+Open a new windows of CMD console, type in the following command to start the ORB
 
 start orbd -ORBInitialPort 1050
 
